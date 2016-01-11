@@ -15,8 +15,8 @@
   </head>
   <body>
     <par>
-      <video region="videoregion" src="{file_name}.mov" region="video" />
-      <textstream region="textregion" src="{file_name}.qt.txt" region="text" />
+      <video region="videoregion" src="123442_MM30_02_01_Terms_and_terminology.mov" region="video" />
+      <textstream region="textregion" src="123442_MM30_02_01_Terms_and_terminology.qt.txt" region="text" />
     </par>
   </body>
 </smil>
