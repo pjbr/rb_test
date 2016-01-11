@@ -1,5 +1,4 @@
-# GENERAL COMMMENTS
-# The code would be more readable and maintable if it was broken up into functions
+# General comment: The code would be more readable and maintainable if it was broken up into functions
 
 # Variable name is misleading, this is a timestamp regex, not caption
 caption_reg = /\[\d+:\d+:\d+.\d+\]/
