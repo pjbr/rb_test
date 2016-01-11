@@ -15,19 +15,16 @@ ARGV.each do |path|
   			if caption_reg.match(line)
   				#If not in caption push caption to 
   				if !in_caption
-  					content.push(line)
+  					caption_block.push(line)
   					in_caption = true
   				else 
   					#do not push ending timestamp
-  					caption = caption_block.join('')
-  					if caption_drop_reg.match(caption)
-  						#do not include caption or timestamp if [BLANK_AUDIO]
-  						content.pop
-  						caption_block = []
-  					else
+  					caption = caption_block[1..-1].join('')
+  					#do not include caption or timestamp if [BLANK_AUDIO]
+  					unless caption_drop_reg.match(caption)
   						content.concat caption_block
-  						caption_block = []
   					end
+  					caption_block = []
   					in_caption = false
   				end
   			elsif in_caption==true
