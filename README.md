@@ -18,5 +18,15 @@ Your solution should:
 4. Command line tool is preferred, but if you want to make a UI, go for it.
 
 
+### To run:
+navigate to src/ directory in console and run 
+```bash
+$ruby main.rb [directory(ies)]
+```
+where [directory(ies)] is a file directory or multiple file directories separated by spaces
 
-
+### To test:
+run test.rb 
+```bash
+$ruby test.rb
+```
