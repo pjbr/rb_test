@@ -23,7 +23,7 @@ puts 'Running src/main.rb on test directory'
 puts '', 'Output of file:~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~', ''
 
 #Run on test directory
-system("ruby", "./src/main.rb", "test/")
+system("ruby", "main.rb", "test/")
 
 puts '', 'end output of file:~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~', ''
 
